@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPP UTHM - Activities</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/mpp-logo.png" alt="MPP UTHM Logo">
+            <h1>MPP UTHM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">MPP Profile</a></li>
+                <li class="active"><a href="activities.html">Activities</a></li>
+                <li><a href="services.html">Student Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="activities-header">
+            <h2>Activities and Programs</h2>
+            <p>Join our upcoming events and see past activities</p>
+        </section>
+
+        <section class="upcoming-programs">
+            <h2>Upcoming Programs</h2>
+            <div class="programs-container">
+                <div class="program-card">
+                    <img src="images/upcoming1.jpg" alt="Leadership Camp">
+                    <h3>Leadership Camp</h3>
+                    <p>Date: 15-17 July 2023</p>
+                    <p>Venue: UTHM Campus</p>
+                    <p>Open to all students</p>
+                    <button class="register-btn" data-event="Leadership Camp">Register Now</button>
+                </div>
+                <div class="program-card">
+                    <img src="images/upcoming2.jpg" alt="Career Workshop">
+                    <h3>Career Workshop</h3>
+                    <p>Date: 25 July 2023</p>
+                    <p>Venue: Dewan Sultan Ibrahim</p>
+                    <p>Featuring industry experts</p>
+                    <button class="register-btn" data-event="Career Workshop">Register Now</button>
+                </div>
+                <div class="program-card">
+                    <img src="images/upcoming3.jpg" alt="Cultural Night">
+                    <h3>Cultural Night</h3>
+                    <p>Date: 12 August 2023</p>
+                    <p>Venue: UTHM Auditorium</p>
+                    <p>Celebrating diversity</p>
+                    <button class="register-btn" data-event="Cultural Night">Register Now</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="registration-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2 id="modal-title">Event Registration</h2>
+                <form id="registration-form">
+                    <input type="hidden" id="event-name">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="student-id">Student ID:</label>
+                        <input type="text" id="student-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="faculty">Faculty:</label>
+                        <select id="faculty" required>
+                            <option value="">Select Faculty</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Science">Science</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Business">Business</option>
+                            <option value="Education">Education</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+
+        <section class="past-activities">
+            <h2>Past Activities</h2>
+            <div class="activities-container">
+                <div class="activity-card">
+                    <img src="images/past1.jpg" alt="Orientation Week">
+                    <h3>Orientation Week 2023</h3>
+                    <p>Date: 5-9 March 2023</p>
+                    <p>Welcoming new students to UTHM</p>
+                </div>
+                <div class="activity-card">
+                    <img src="images/past2.jpg" alt="Blood Donation">
+                    <h3>Blood Donation Campaign</h3>
+                    <p>Date: 15 April 2023</p>
+                    <p>Collected 150 pints of blood</p>
+                </div>
+                <div class="activity-card">
+                    <img src="images/past3.jpg" alt="Debate Competition">
+                    <h3>Inter-University Debate</h3>
+                    <p>Date: 22 May 2023</p>
+                    <p>UTHM team won 2nd place</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MPP UTHM. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

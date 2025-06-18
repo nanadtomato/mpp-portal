@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPP UTHM - Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/mpp-logo.png" alt="MPP UTHM Logo">
+            <h1>MPP UTHM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">MPP Profile</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li class="active"><a href="services.html">Student Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-header">
+            <h2>Student Services</h2>
+            <p>We're here to help and listen</p>
+        </section>
+
+        <section class="feedback-section">
+            <h2>Feedback</h2>
+            <p>We value your feedback to improve our services</p>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-type">Feedback Type:</label>
+                    <select id="feedback-type" required>
+                        <option value="">Select type</option>
+                        <option value="suggestion">Suggestion</option>
+                        <option value="compliment">Compliment</option>
+                        <option value="improvement">Area for Improvement</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-name">Name (optional):</label>
+                    <input type="text" id="feedback-name">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-email">Email (optional):</label>
+                    <input type="email" id="feedback-email">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-message">Your Feedback:</label>
+                    <textarea id="feedback-message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+        <section class="complaints-section">
+            <h2>Complaints</h2>
+            <p>If you have any complaints, please fill the form below</p>
+            <form id="complaint-form">
+                <div class="form-group">
+                    <label for="complaint-name">Name:</label>
+                    <input type="text" id="complaint-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-id">Student ID:</label>
+                    <input type="text" id="complaint-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-email">Email:</label>
+                    <input type="email" id="complaint-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-phone">Phone Number:</label>
+                    <input type="tel" id="complaint-phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-type">Complaint Type:</label>
+                    <select id="complaint-type" required>
+                        <option value="">Select type</option>
+                        <option value="facilities">Facilities</option>
+                        <option value="academic">Academic</option>
+                        <option value="administration">Administration</option>
+                        <option value="hostel">Hostel</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-details">Complaint Details:</label>
+                    <textarea id="complaint-details" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="complaint-solution">Suggested Solution (optional):</label>
+                    <textarea id="complaint-solution" rows="3"></textarea>
+                </div>
+                <button type="submit">Submit Complaint</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MPP UTHM. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
