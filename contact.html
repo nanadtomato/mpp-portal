@@ -3,89 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPP UTHM - Contact</title>
+    <title>Contact Us - MPP UTHM</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/mpp-logo.png" alt="MPP UTHM Logo">
-            <h1>MPP UTHM</h1>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/mpp-logo.png" alt="MPP UTHM Logo">
+                <h1>MPP UTHM</h1>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/mpputhm_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">MPP Profile</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="services.html">Student Services</a></li>
+                <li class="dropdown">
+                    <a href="profile.html">MPP Profile <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="council.html">Council Members</a></li>
+                        <li><a href="vision-mission.html">Vision & Mission</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="activities.html">Activities <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="upcoming.html">Upcoming Programs</a></li>
+                        <li><a href="past-activities.html">Past Activities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="complaints.html">Complaints</a></li>
+                    </ul>
+                </li>
                 <li class="active"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with your student representatives</p>
+    </div>
+
     <main>
-        <section class="contact-header">
-            <h2>Contact Us</h2>
-            <p>Get in touch with MPP UTHM</p>
-        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Office Location</h3>
+                            <p>Student Affairs Center<br>
+                            Universiti Tun Hussein Onn Malaysia<br>
+                            86400 Parit Raja, Batu Pahat<br>
+                            Johor, Malaysia</p>
+                        </div>
+                    </div>
 
-        <section class="contact-info">
-            <div class="contact-card">
-                <h3>Office Location</h3>
-                <p>Student Affairs Center</p>
-                <p>Universiti Tun Hussein Onn Malaysia</p>
-                <p>86400 Parit Raja, Batu Pahat</p>
-                <p>Johor, Malaysia</p>
-            </div>
-            <div class="contact-card">
-                <h3>Contact Numbers</h3>
-                <p>General Line: +607-453 7000</p>
-                <p>President: +6012-345 6789</p>
-                <p>Vice President: +6012-987 6543</p>
-                <p>Secretary: +6011-2233 4455</p>
-            </div>
-            <div class="contact-card">
-                <h3>Email Addresses</h3>
-                <p>General: mpp@uthm.edu.my</p>
-                <p>President: mpp_president@uthm.edu.my</p>
-                <p>Activities: mpp_activities@uthm.edu.my</p>
-                <p>Complaints: mpp_complaints@uthm.edu.my</p>
-            </div>
-        </section>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Contact Numbers</h3>
+                            <p>General Line: +607-453 7000<br>
+                            President: +6012-345 6789<br>
+                            Vice President: +6012-987 6543<br>
+                            Secretary: +6011-2233 4455</p>
+                        </div>
+                    </div>
 
-        <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-email">Email:</label>
-                    <input type="email" id="contact-email" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-subject">Subject:</label>
-                    <input type="text" id="contact-subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="contact-message">Message:</label>
-                    <textarea id="contact-message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Addresses</h3>
+                            <p>General: mpp@uthm.edu.my<br>
+                            President: mpp_president@uthm.edu.my<br>
+                            Activities: mpp_activities@uthm.edu.my<br>
+                            Complaints: mpp_complaints@uthm.edu.my</p>
+                        </div>
+                    </div>
 
-        <section class="office-hours">
-            <h2>Office Hours</h2>
-            <p>Monday - Thursday: 8:00 AM - 5:00 PM</p>
-            <p>Friday: 8:00 AM - 12:15 PM, 2:45 PM - 5:00 PM</p>
-            <p>Saturday - Sunday: Closed</p>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Thursday: 8:00 AM - 5:00 PM<br>
+                            Friday: 8:00 AM - 12:15 PM, 2:45 PM - 5:00 PM<br>
+                            Saturday - Sunday: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.391715373843!2d103.08911131475392!3d1.853898298549407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d05f3a6a3b1a7d%3A0x3a6f5e1a5b6b5b1a!2sUniversiti%20Tun%20Hussein%20Onn%20Malaysia!5e0!3m2!1sen!2smy!4v1623456789012!5m2!1sen!2smy" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions or need assistance? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-id">Student ID (if applicable):</label>
+                        <input type="text" id="student-id">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" required>
+                            <option value="">Select subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="activities">Activities & Programs</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 MPP UTHM. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About MPP UTHM</h3>
+                <p>The Student Representative Council of Universiti Tun Hussein Onn Malaysia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="council.html">Council Members</a></li>
+                    <li><a href="upcoming.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mpputhm_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MPP UTHM. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

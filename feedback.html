@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - MPP UTHM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="images/mpp-logo.png" alt="MPP UTHM Logo">
+                <h1>MPP UTHM</h1>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/mpputhm_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="profile.html">MPP Profile <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="council.html">Council Members</a></li>
+                        <li><a href="vision-mission.html">Vision & Mission</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="activities.html">Activities <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="upcoming.html">Upcoming Programs</a></li>
+                        <li><a href="past-activities.html">Past Activities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="active"><a href="feedback.html">Feedback</a></li>
+                        <li><a href="complaints.html">Complaints</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Feedback Form</h1>
+        <p>We value your input to improve our services</p>
+    </div>
+
+    <main>
+        <section class="feedback-section">
+            <div class="feedback-container">
+                <div class="feedback-info">
+                    <h2>Share Your Thoughts</h2>
+                    <p>Your feedback helps us understand what we're doing well and where we can improve. We appreciate you taking the time to share your experience with us.</p>
+                    <div class="feedback-guidelines">
+                        <h3><i class="fas fa-info-circle"></i> Feedback Guidelines</h3>
+                        <ul>
+                            <li>Be specific about your experience</li>
+                            <li>Focus on facts and your personal experience</li>
+                            <li>Suggest possible improvements</li>
+                            <li>Avoid personal attacks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-type">Type of Feedback:</label>
+                        <select id="feedback-type" required>
+                            <option value="">Select feedback type</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="compliment">Compliment</option>
+                            <option value="improvement">Area for Improvement</option>
+                            <option value="general">General Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name (optional):</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="student-id">Student ID (optional):</label>
+                            <input type="text" id="student-id">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email (optional):</label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Feedback:</label>
+                        <textarea id="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Overall Satisfaction:</label>
+                        <div class="rating-container">
+                            <div class="rating-stars">
+                                <input type="radio" id="star5" name="rating" value="5">
+                                <label for="star5"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1"><i class="fas fa-star"></i></label>
+                            </div>
+                            <span class="rating-label">Select your rating</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About MPP UTHM</h3>
+                <p>The Student Representative Council of Universiti Tun Hussein Onn Malaysia.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="council.html">Council Members</a></li>
+                    <li><a href="upcoming.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/mpputhm_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MPP UTHM. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
